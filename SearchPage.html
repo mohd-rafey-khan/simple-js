@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+
+
+    <link rel="stylesheet" href="LP.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Search</title>
+</head>
+
+<body>
+
+    <div>
+        <div style="padding:10px; background: #04204a; overflow: hidden;">
+            <div class="row " style="margin-bottom: 1xpx;">
+                <div class="col-md d-flex justify-content-end" style="margin-right: 10%;">
+                    <a href="ProductPage.Html">
+                        <h1>Products | </h1>
+                    </a>
+
+                    <a href="SearchPage.html">
+                        <h1>Search results</h1>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row d-flex align-items-center" style="padding-top: 5px">
+                <div class="col-md-3 d-flex align-items-center" style="display: flex;">
+                    <a href="ProjectLP.html">
+                        <h2>Home</h2>
+                    </a>
+
+                    <h2 style="margin-left: 30%;">Monarch Elec.</h2>
+                    <img src=https://wallpapercave.com/wp/XbahjAD.jpg id="bolt" width='100px' height="50px">
+
+                </div>
+                <div class="col-md-5  ">
+                    <!--bootstrap-->
+
+                    <div class="input-group mb-1">
+                        <input type="text" id="searchbar" class="form-control" placeholder="Search an item">
+                        <span class="input-group-text" id="inputGroup-sizing-default">
+                            <button onclick="search()" class="bi" type="submit">Search</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-2 d-flex justify-content-end ">
+                    <a href="signup.html">
+                        <h1>Sign Up</h1>
+                    </a>
+                </div>
+                <div class="col-md-1 d-flex justify-content-end">
+                    <a href="cart.html"><img
+                            src="http://www.dreamlandtours.net/wp-content/uploads/2011/05/button_view_cart.png"
+                            width="120px" height="30px" alt="cart" /></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <section>
+        <div class="container" style="padding-left: 10% ; padding-right: 10%;">
+            <h4>Search results are : <span id="result"></span> </h4>
+            <div class="d-flex justify-content-end">
+                <select class="browser-default custom-select" style="width: 200px;">
+                    <option selected disabled>Filter</option><!--select disabled: unusable/unclickable-->
+                    <option value="Price">Price</option>
+                    <option value="Rating">Rating</option>
+
+                </select><!--create a dropdown list options-->
+
+                <select class="browser-default custom-select" style="width: 200px;">
+                    <option selected disabled>Sort by Price</option><!--select disabled: unusable/unclickable-->
+                    <option value="Price">Lowest to Highest</option><!--defines an option in a select list-->
+                    <option value="Rating">Highest to Lowest</option>
+
+                </select>
+            </div>
+
+            <div class="row item" style="padding-top: 15px;display:flex;">
+                <div class="col-md-3">
+                    <img src="https://www.ubuy.co.it/productimg/?image=aHR0cHM6Ly9pbWFnZXMtbmEuc3NsLWltYWdlcy1hbWF6b24uY29tL2ltYWdlcy9JLzcxb2pGcGNBOWJMLl9TUzEwMDBfLmpwZw.jpg"
+                        width="150px" height="150px" alt="">
+                </div>
+                <div class="col-md-9">
+                    <h4 class="text-justify name">Acer Aspire 5 A515-55G-57H8, 15.6" Full HD IPS
+                        Display, 10th Gen Intel Core i5-1035G1</h4>
+                    <img src="https://www.perfecto.io/sites/perfecto/files/image/2019-05/5stars.png" alt=""
+                        height="50px" width="150px">
+                    <p id="color">$1800</p>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row item" style="padding-top: 15px;display:flex">
+                <div class="col-md-3">
+                    <img src="https://laptop-hunter.com/147706-large_default/notebook-acer-aspire-5-a515-55-51s0-nxhsueg001-blackred.jpg"
+                        width="150px" height="150px" alt="">
+
+                </div>
+                <div class="col-md-9">
+                    <h4 class="text-justify name">Acer Aspire 5 A515-55-56VK, 15.6" Full HD IPS
+                        Display, 10th Gen Intel Core i5-1035G1</h4>
+                    <img src="https://rrrandm.files.wordpress.com/2011/09/four_half-stars_0.png" alt="" height="50px"
+                        width="150px">
+                    <p id="color">$1650</p>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row item" style="padding-top: 15px;display:flex">
+                <div class="col-md-3">
+                    <img src="https://i.pinimg.com/736x/48/08/86/480886ff66c48772e45cbbade3399778.jpg" width="150px"
+                        height="150px" alt="">
+                </div>
+                <div class="col-md-9">
+                    <h4 class="text-justify name">Acer Aspire 1 A115-31-C2Y3, 15.6" Full HD
+                        Display, Intel Celeron N4020, 4GB DDR4</h4>
+                    <img src="https://cybermusicworld.com/wp-content/uploads/2020/05/3-5-5-star-9.png" alt=""
+                        height="50px" width="150px">
+                    <p id="color">$1799</p>
+                    <hr>
+                </div>
+
+            </div>
+
+            <div class="row item" style="padding-top: 15px;display:flex;">
+                <div class="col-md-3">
+                    <img src="https://www.digitweek.com/wp-content/uploads/2020/06/Acer-Swift-3-SF314-42-R9YN-Review-scaled.jpg"
+                        width="200px" height="150px" alt="">
+                </div>
+                <div class="col-md-9">
+                    <h4 class="text-justify name">Acer Swift 3 Thin Light Laptop, 14" Full HD IPS,
+                        AMD Ryzen 7 4700U Octa-Core</h4>
+                    <img src="https://www.perfecto.io/sites/perfecto/files/image/2019-05/5stars.png" alt=""
+                        height="50px" width="150px">
+                    <p id="color">$2200</p>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="searchpage.js"></script>
+</body>
+
+</html>

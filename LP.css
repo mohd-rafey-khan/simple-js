@@ -1,0 +1,122 @@
+/* bolt image*/
+#bolt{
+border-radius: 30px;
+}
+/* search button */
+.bi {
+  height: 3px;
+  padding-bottom: 22px;
+  border: none;
+}
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3498DB;
+  color:black;
+  padding: 16px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  width: 160px;
+  text-align: center;
+  font-weight: 700;
+}
+/* Dropdown button on hover & focus */
+.dropbtn:hover {
+  background-color: #2980B9;
+}
+/* The container <div> added font weight*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+}
+ /* Dropdown Content (Hidden by Default)
+ z-index: stack order of the contents  */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px black;
+  z-index: 1; 
+}
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+/* Show the dropdown  */
+.show {
+  display:block;
+}
+/* id for images, padding to space them out evenly*/
+#cardd{
+  padding-left: 275px; 
+}
+/*class for image*/
+.card-body{
+  background-color:  rgb(250, 166, 10);
+}
+
+.card-title{
+  font-size: medium;
+}
+
+.card{
+  width: 14rem;
+}
+
+div h1{
+  color: white;
+  font-weight: bolder;
+  font-size: 1em;
+}
+
+div h2{
+  color: white;
+  font-weight: bolder;
+  font-size: 1.4em;
+}
+
+div h3{
+  color: red;
+  font-weight: bolder;
+  padding-top: 10px;
+}
+
+div h4{
+  font-size: 1.6em;
+}
+/*added*/
+div h5{
+  padding-top: 30px;
+}
+
+.card-text{
+  color: red;
+  font-size: smaller;
+  font-weight: bolder;
+  text-decoration: line-through;
+}
+
+#Instock{
+  color: green;
+  font-weight: bolder;
+}
+
+#Outstock{
+  color: red;
+  font-weight: bolder ;
+}
+
+#color{
+  font-size: 1.5em;
+  color: red;
+}
+
+.div1 {
+  border: 1px solid blue;
+}
